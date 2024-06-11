@@ -1,0 +1,40 @@
+<div class="container-fluid mt-4">
+  <h2 class="text-center">Lista de Paciente</h2>
+
+  <!-- Botón Nuevo Paciente -->
+  <div class="mb-3">
+    <button type="button" class="btn btn-primary" routerLink="/nuevo-paciente">Nuevo Paciente</button>
+  </div>
+
+  <!-- Tabla de Pacientes -->
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead class="table-dark">
+        <tr>
+          <th class="text-center">Nombre</th>
+          <th class="text-center">Apellido</th>
+          <th class="text-center">Teléfono</th>
+          <th class="text-center">Modulo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let contacto of contactos; let i = index">
+          <td class="text-center">{{ contacto.nombre }}</td>
+          <td class="text-center">{{ contacto.apellido }}</td>
+          <td class="text-center">{{ contacto.telefono }}</td>
+          <td class="text-center">
+            <button class="btn btn-primary btn-sm me-2" routerLink="/sesion">
+              Sesiones
+            </button>
+            <button class="btn btn-secondary btn-sm me-2" routerLink="/consulta">
+              Consultas
+            </button>
+            <button class="btn btn-warning btn-sm" routerLink="/paciente">
+              Paciente
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<div>
+  <form>
+    <div class="card">
+      <div class="card-body">
+        <h3>Editar evaluación</h3>
+
+        <div class="mb-3">
+          <label for="fecha_ingreso" class="form-label">Fecha de Ingreso:</label>
+          <input type="date" class="form-control" id="fecha_ingreso" formControlName="fecha_ingreso">
+        </div>
+
+        <div class="mb-3">
+          <label for="diagnostico" class="form-label">Diagnóstico:</label>
+          <input type="text" class="form-control" id="diagnostico" formControlName="diagnostico">
+        </div>
+
+        <div class="mb-3">
+          <label for="objetivo" class="form-label">Objetivo:</label>
+          <input type="text" class="form-control" id="objetivo" formControlName="objetivo">
+        </div>
+
+        <div class="mb-3">
+          <label for="evaluacion" class="form-label">Evaluación:</label>
+          <input type="text" class="form-control" id="evaluacion" formControlName="evaluacion">
+        </div>
+
+
+        <div class="button-container">
+          <button type="submit" class="btn btn-primary me-2">Guardar</button>
+          <button type="button" class="btn btn-secondary" routerLink="/lista">Volver</button>
+        </div>
+
+      </div>
+    </div>
+  </form>
+</div>

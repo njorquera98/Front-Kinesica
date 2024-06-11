@@ -1,0 +1,56 @@
+<div>
+  <form>
+    <div class="card">
+      <div class="card-body">
+        <h1>Nuevo Paciente</h1>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" formControlName="nombre">
+        </div>
+
+        <div class="mb-3">
+          <label for="apellido" class="form-label">Apellido:</label>
+          <input type="text" class="form-control" id="apellido" formControlName="apellido">
+        </div>
+
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Teléfono:</label>
+          <input type="text" class="form-control" id="telefono" formControlName="telefono">
+        </div>
+
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo electrónico:</label>
+          <input type="email" class="form-control" id="correo" formControlName="correo">
+        </div>
+
+        <div class="mb-3">
+          <label for="prevision" class="form-label">Previsión:</label>
+          <select class="form-select" id="prevision" formControlName="prevision">
+            <option value="CAPITAL">CAPITAL</option>
+            <option value="CUPRUM">CUPRUM</option>
+            <option value="HABITAT">HABITAT</option>
+            <option value="MODELO">MODELO</option>
+            <option value="PLANVITAL">PLANVITAL</option>
+            <option value="PROVIDA">PROVIDA</option>
+            <option value="UNO">UNO</option>
+            <option value="OTRA">OTRA (PARTICULAR)</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="fecha_nacimiento" class="form-label">Fecha de Nacimiento:</label>
+          <input type="date" class="form-control" id="fecha_nacimiento" formControlName="fecha_nacimiento">
+        </div>
+
+
+
+
+        <div class="button-container">
+          <button type="submit" class="btn btn-primary me-2">Guardar</button>
+          <button type="button" class="btn btn-secondary" routerLink="/lista">Volver</button>
+        </div>
+
+      </div>
+    </div>
+  </form>
+</div>
