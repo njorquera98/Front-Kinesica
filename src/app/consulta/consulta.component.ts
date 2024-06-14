@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './consulta.component.css'
 })
 export class ConsultaComponent {
+
   paciente = {
     nombre: "Juan",
     apellido: "Pérez",
@@ -20,6 +21,26 @@ export class ConsultaComponent {
     diagnostico: "Lesión en rodilla",
   };
 
+  patologia = {
+    cardiovascular: "Ninguna",
+    pulmonares: "Ninguna",
+    digestivas: "Ninguna",
+    diabetes: "Ninguna",
+    renales: "Ninguna",
+    quirurgicos: "Ninguna",
+    alergicos: "Ninguna",
+    transfusiones: "Ninguna",
+    medicamentos: "Ninguna",
+    actividad_fisica: "Ninguna",
+  };
+
+  no_patologica = {
+    alcohol: "Si",
+    tabaquismo: "Diario",
+    drogas: "No",
+    inmunizaciones: "No",
+
+  }
 
   consultas = [
     {
